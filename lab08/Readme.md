@@ -1,0 +1,1 @@
+![lab8](https://user-images.githubusercontent.com/96528179/168548693-00fdb973-aa0b-4298-bf45-0f1c8cda9c65.png)
