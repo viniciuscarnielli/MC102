@@ -1,7 +1,8 @@
 [](#batalha-pokémon)Batalha Pokémon
 ===================================
 
-[![Pokémon](images/pokemon.png)](pokemon.png)
+![pokemon](https://github.com/viniciuscarnielli/MC102/assets/96528179/a7d0c62b-1d65-49a8-97ed-cf8fbb07f5ab)
+
 
 Pokémon é uma franquia de mídia, incluindo jogos de vídeo-game, criada na década de 90. Os jogos são bastante famosos e fazem sucesso até os dias atuais. Em todos os jogos, os personagens treinam e cuidam das criaturas que dão nome ao jogo, os pokémon (o nome Pokémon vem da junção de palavras do título original japonês: "Pocket Monsters" – o que explica também por que o termo "pokémon" não tem plural). Existem várias espécies de pokémon e cada uma aprende vários ataques distintos.
 
