@@ -1,5 +1,3 @@
-Laboratório 04    .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; font-family: 'Noto Sans', sans-serif; } .markdown-body h6 { margin-bottom: 0; } .markdown-body h6 + ul li { display: inline-block; width: 100%; max-width: 426px; vertical-align: top; } .markdown-body h6 + ul li pre { max-height: 400px; }
-
 [](#batalha-pokémon)Batalha Pokémon
 ===================================
 
