@@ -12,14 +12,14 @@ Cada ataque tem um valor `x`, que indica a força do ataque, e um multiplicador 
 
 Você foi chamado para criar um programa que simula uma batalha em turnos do jogo Pokémon. Nessa batalha, o pokémon Ivysaur enfrenta o pokémon Pikachu. Inicialmente, seu programa deve ler dois valores inteiros que indicam a quantidade inicial de `hp` dos pokémon Ivysaur e Pikachu, respectivamente. Após isso, seu programa deve ler dois valores inteiros que indicam a velocidade dos pokémon Ivysaur e Pikachu, respectivamente. Em seguida, o seu programa deve ler os ataques de cada turno, sendo que cada ataque é indicado por dois valores, sendo o primeiro a força do ataque e o segundo o multiplicador de efetividade. Os valores correspondentes ao primeiro ataque são do pokémon mais rápido, enquanto os valores correspondentes ao segundo ataque são do pokémon mais lento. Ao final de cada turno, você deverá imprimir o `hp` de cada pokémon.
 
-    HP Ivysaur = 
-    HP Pikachu = 
+    HP Ivysaur = <HP Ivysaur>
+    HP Pikachu = <HP Pikachu>
     
 
 Lembre-se que o ataque do pokémon com maior velocidade é considerado primeiro ao diminuir o `hp` do oponente. O `hp` de cada pokémon nunca será negativo, sendo que seu valor mínimo é zero. No momento que o `hp` de um dos pokémon chega em zero o mesmo é considerado como derrotado e a batalha é considerada encerrada, mesmo que isso ocorra no meio de um turno. Ao final da batalha, após imprimir o `hp` de cada pokémon, seu programa deve imprimir o nome e o `hp` do pokémon que venceu a batalha:
 
-    Pokémon Vencedor: 
-    HP do Vencedor: 
+    Pokémon Vencedor: <nome pokémon vencedor>
+    HP do Vencedor: <HP do pokémon vencedor>
     
 
 Exemplos de entradas e saídas esperadas pelo seu programa:
