@@ -1,53 +1,60 @@
-Lembre-se que o ataque do pokémon com maior velocidade é considerado primeiro ao diminuir o `hp` do oponente. O `hp` de cada pokémon nunca será negativo, sendo que seu valor mínimo é zero. No momento que o `hp` de um dos pokémon chega em zero o mesmo é considerado como derrotado e a batalha é considerada encerrada, mesmo que isso ocorra no meio de um turno. Ao final da batalha, após imprimir o `hp` de cada pokémon, seu programa deve imprimir o nome e o `hp` do pokémon que venceu a batalha:
+# **Documentação da Classe Controle**
 
-    Pokémon Vencedor: <nome pokémon vencedor>
-    HP do Vencedor: <HP do pokémon vencedor>
-    
+A classe **`Controle`** é um componente do Spring MVC desenvolvido para lidar com requisições relacionadas a mensagens de boas-vindas em um aplicativo web. Esta classe inclui métodos que respondem a diferentes endpoints, fornecendo mensagens de boas-vindas de maneiras variadas.
 
-Exemplos de entradas e saídas esperadas pelo seu programa:
+## **Overview**
 
-### [](#teste-01)Teste 01
+A classe **`Controle`** é anotada com **`@RestController`**, indicando que os métodos desta classe retornam diretamente os valores de retorno como respostas HTTP apropriadas. Os métodos são mapeados para diferentes endpoints usando a anotação **`@GetMapping`**.
 
-[Entrada](dados/arq01.in)
+## **Métodos**
 
-    80
-    80
-    100
-    70
-    10
-    0.5
-    20
-    1
-    10
-    0.5
-    10
-    2
-    20
-    0.5
-    10
-    1
-    20
-    2
-    10
-    0.5
-    20
-    1
-    10
-    2
-    
+### **1. Método `mensagem()`**
 
-[Saída](dados/arq01.out)
+Este método manipula requisições para o endpoint padrão ("/") e retorna a mensagem "Hello World!".
 
-    HP Ivysaur = 60
-    HP Pikachu = 75
-    HP Ivysaur = 40
-    HP Pikachu = 70
-    HP Ivysaur = 30
-    HP Pikachu = 60
-    HP Ivysaur = 25
-    HP Pikachu = 20
-    HP Ivysaur = 25
-    HP Pikachu = 0
-    Pokémon Vencedor: Ivysaur
-    HP do Vencedor: 25
-    
+- **Endpoint:** "/"
+- **Método HTTP:** GET
+- **Retorno:** Uma mensagem de saudação padrão.
+
+```java
+javaCopy code
+@GetMapping("")
+public String mensagem() {
+    return "Hello World!";
+}
+```
+
+### **2. Método `boasVindas()`**
+
+Este método manipula requisições para o endpoint "/boasVindas/" e retorna a mensagem "Seja bem vindo(a)".
+
+- **Endpoint:** "/boasVindas/"
+- **Método HTTP:** GET
+- **Retorno:** Uma mensagem de boas-vindas genérica.
+
+```java
+javaCopy code
+@GetMapping("/boasVindas/")
+public String boasVindas() {
+    return "Seja bem vindo(a)";
+}
+```
+
+### **3. Método `boasVindas(String nome)`**
+
+Este método manipula requisições para o endpoint "/boasVindas/{nome}" e retorna uma mensagem de boas-vindas personalizada com o nome fornecido como parâmetro de caminho.
+
+- **Endpoint:** "/boasVindas/{nome}"
+- **Método HTTP:** GET
+- **Parâmetro:** **`nome`** - O nome a ser incluído na mensagem de boas-vindas.
+- **Retorno:** Uma mensagem de boas-vindas personalizada com o nome fornecido.
+
+```java
+javaCopy code
+@GetMapping("/boasVindas/{nome}")
+public String boasVindas(@PathVariable String nome) {
+    return "Seja bem vindo(a) " + nome;
+}
+```
+
+A classe **`Controle`** oferece endpoints simples, mas versáteis, para fornecer mensagens de boas-vindas. Os métodos são projetados para serem facilmente integrados em um aplicativo web Spring MVC, proporcionando uma experiência amigável aos usuários.
