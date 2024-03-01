@@ -1,1 +1,0 @@
-![lab13](https://user-images.githubusercontent.com/96528179/168548714-58485b66-b668-438f-95ad-548c5ac0a62e.png)

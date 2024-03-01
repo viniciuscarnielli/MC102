@@ -1,1 +1,0 @@
-![lab15](https://user-images.githubusercontent.com/96528179/168548723-09588de7-4ba4-46d1-a3b6-d0469131bd6f.png)
